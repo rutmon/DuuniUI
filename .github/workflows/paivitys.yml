@@ -1,0 +1,32 @@
+name: Paivita Kaypa hoito -tiedot
+
+on:
+  schedule:
+    - cron: '0 5 * * *' # Ajaa skriptin joka aamu klo 08:00 Suomen aikaa (UTC 05:00)
+  workflow_dispatch: # Sallii päivityksen käynnistämisen myös käsin napista
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kopioi koodi
+        uses: actions/checkout@v3
+
+      - name: Asenna Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Asenna kirjastot
+        run: pip install -r requirements.txt
+
+      - name: Aja skripti
+        run: python monitori.py
+
+      - name: Tallenna muutokset
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add index.html historia.json
+          git commit -m "Automaattinen päivitys" || exit 0
+          git push
