@@ -1,10 +1,26 @@
 {
+    "https://www.kaypahoito.fi/hoi50110": {
+        "pvm": "18.05.2022",
+        "tila": "voimassa"
+    },
+    "https://www.kaypahoito.fi/hoi50117": {
+        "pvm": "25.05.2023",
+        "tila": "voimassa"
+    },
+    "https://www.kaypahoito.fi/hoi50127": {
+        "pvm": "10.01.2023",
+        "tila": "voimassa"
+    },
     "https://www.kaypahoito.fi/hoi50094": {
         "pvm": "06.02.2019",
         "tila": "päivityksessä"
     },
     "https://www.kaypahoito.fi/hoi50090": {
         "pvm": "22.10.2025",
+        "tila": "voimassa"
+    },
+    "https://www.kaypahoito.fi/hoi50086": {
+        "pvm": "11.02.2025",
         "tila": "voimassa"
     },
     "https://www.kaypahoito.fi/hoi50057": {
@@ -17,6 +33,10 @@
     },
     "https://www.kaypahoito.fi/hoi40020": {
         "pvm": "11.11.2024",
+        "tila": "voimassa"
+    },
+    "https://www.kaypahoito.fi/hoi50074": {
+        "pvm": "12.03.2020",
         "tila": "voimassa"
     }
 }
